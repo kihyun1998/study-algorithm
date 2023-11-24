@@ -1,7 +1,13 @@
-def add():
-    return a+b
+s1 = int(input())
+s2 = list(map(int, input().split()))
 
-a=1
-b=2
+cnt =0
+for i in s2:
+    if i % 2 == 0: cnt+=1
+    else: cnt-=1
 
-print(add())
+
+if cnt>0:
+    print("Happy")
+else:
+    print("Sad")
