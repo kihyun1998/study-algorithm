@@ -5,7 +5,7 @@ def bfs(si,sj,ei,ej):
     q=[]
     q.append([si,sj])
     ans[si][sj]=1
-    # maze[start_i][start_j]=0
+    maze[si][sj]=0
 
     while q:
         now = q.pop(0)
